@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - CCM Tech Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo-container">
+                <a th:href="@{/}">
+                    <img th:src="@{/assets/logo.jpg}" alt="CCM Tech Services Logo" class="nav-logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a th:href="@{/}">Home</a></li>
+                <li><a th:href="@{/#services}">Services</a></li>
+                <li><a th:href="@{/projects}" class="active">Projects</a></li>
+                <li><a th:href="@{/about}">About</a></li>
+                <li><a th:href="@{/#contact}">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" style="min-height: 400px; height: 50vh;">
+            <div class="hero-content">
+                <h1>Our Projects</h1>
+                <p>A showcase of digital excellence and innovation.</p>
+            </div>
+            <div class="hero-background"></div>
+        </section>
+
+        <section class="projects-gallery" style="padding: 100px 0; background: var(--bg-color);">
+            <div class="container">
+                <div class="services-grid">
+                    <!-- Project 1 -->
+                    <div class="service-card project-card">
+                        <div class="project-image-placeholder">
+                            <i class="icon">💻</i>
+                        </div>
+                        <h3>E-Commerce Reform</h3>
+                        <p>A complete overhaul of a retail platform, boosting sales by 40% through improved UX and
+                            streamlined checkout processes.</p>
+                        <a href="#" class="cta-button"
+                            style="text-decoration: none; font-size: 0.9rem; padding: 0.8rem 2rem; margin-top: 1rem;">View
+                            Details</a>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="service-card project-card">
+                        <div class="project-image-placeholder">
+                            <i class="icon">🏥</i>
+                        </div>
+                        <h3>HealthTech Dashboard</h3>
+                        <p>Secure patient management system with real-time data visualization for medical professionals.
+                        </p>
+                        <a href="#" class="cta-button"
+                            style="text-decoration: none; font-size: 0.9rem; padding: 0.8rem 2rem; margin-top: 1rem;">View
+                            Details</a>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="service-card project-card">
+                        <div class="project-image-placeholder">
+                            <i class="icon">🏦</i>
+                        </div>
+                        <h3>FinLearn Portal</h3>
+                        <p>An educational platform for financial literacy featuring interactive courses and progress
+                            tracking.</p>
+                        <a href="#" class="cta-button"
+                            style="text-decoration: none; font-size: 0.9rem; padding: 0.8rem 2rem; margin-top: 1rem;">View
+                            Details</a>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="service-card project-card">
+                        <div class="project-image-placeholder">
+                            <i class="icon">⚖️</i>
+                        </div>
+                        <h3>Legal Firm Site</h3>
+                        <p>Professional presence for a law firm, featuring appointment scheduling and resource
+                            libraries.</p>
+                        <a href="#" class="cta-button"
+                            style="text-decoration: none; font-size: 0.9rem; padding: 0.8rem 2rem; margin-top: 1rem;">View
+                            Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 CCM Tech Services. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script th:src="@{/script.js}"></script>
+
+</body>
+
+</html>
