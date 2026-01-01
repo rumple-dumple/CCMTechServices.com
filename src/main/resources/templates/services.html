@@ -19,10 +19,10 @@
             </div>
             <ul class="nav-links">
                 <li><a th:href="@{/}">Home</a></li>
-                <li><a th:href="@{/#services}" class="active">Services</a></li>
+                <li><a th:href="@{/services}" class="active">Services</a></li>
                 <li><a th:href="@{/projects}">Projects</a></li>
                 <li><a th:href="@{/about}">About</a></li>
-                <li><a th:href="@{/#contact}">Contact</a></li>
+                <li><a th:href="@{/contact}">Contact</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -41,54 +41,38 @@
             <div class="hero-background"></div>
         </section>
 
-        <section class="about-detail" style="padding: 80px 0; background: var(--bg-color);">
+        <section id="services" class="services">
             <div class="container">
-                <div class="about-grid"
-                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem; align-items: start;">
-
-                    <div class="bio-section">
-                        <h2 style="text-align: left; margin-bottom: 2rem;">Meet the Founder</h2>
-                        <p style="font-size: 1.1rem; margin-bottom: 1.5rem; color: var(--text-primary);">
-                            <strong>Ronson Phillips</strong> founded CCM Tech Services in 2025 with a vision to provide
-                            top-tier IT solutions to businesses navigating the modern digital landscape.
-                        </p>
-                        <p style="margin-bottom: 1.5rem;">
-                            Ronson's journey in Information Technology began in <strong>2016</strong>. He landed his
-                            first IT position at <strong>The Florida Bar</strong> in Tallahassee, Florida, where he
-                            honed his skills in system management and user support.
-                        </p>
-                        <p>
-                            With nearly a decade of experience, Ronson brings a wealth of knowledge and a dedication to
-                            excellence in every project CCM Tech Services undertakes.
+                <h2 class="section-title">Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="icon">🌐</div>
+                        <h3>Website Design</h3>
+                        <p>Modern, responsive, and user-centric designs that elevate your brand identity and engage your
+                            audience.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="icon">☁️</div>
+                        <h3>Cloud Migration</h3>
+                        <p>Seamless transition of your business operations to the cloud with minimal downtime and
+                            maximum security.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="icon">⚙️</div>
+                        <h3>Cloud Management</h3>
+                        <p>Ongoing optimization and management of your cloud resources to ensure efficiency and
+                            cost-effectiveness.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="icon">🏗️</div>
+                        <h3>Cloud Infrastructure</h3>
+                        <p>Robust and scalable infrastructure solutions tailored to support your growing business needs.
                         </p>
                     </div>
-
-                    <div class="certs-section">
-                        <h2 style="text-align: left; margin-bottom: 2rem;">Certifications</h2>
-                        <div class="cert-list" style="display: flex; flex-direction: column; gap: 1.5rem;">
-                            <div class="cert-card"
-                                style="background: var(--card-bg); padding: 1.5rem; border-radius: 10px; border-left: 4px solid var(--accent-blue);">
-                                <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: #fff;">PL-900</h3>
-                                <p style="margin-bottom: 0;">Microsoft Power Platform Fundamentals</p>
-                            </div>
-                            <div class="cert-card"
-                                style="background: var(--card-bg); padding: 1.5rem; border-radius: 10px; border-left: 4px solid var(--accent-cyan);">
-                                <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: #fff;">AZ-900</h3>
-                                <p style="margin-bottom: 0;">Microsoft Azure Fundamentals</p>
-                            </div>
-                            <div class="cert-card"
-                                style="background: var(--card-bg); padding: 1.5rem; border-radius: 10px; border-left: 4px solid var(--accent-silver);">
-                                <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: #fff;">SC-900</h3>
-                                <p style="margin-bottom: 0;">Microsoft Security, Compliance and Identity Fundamentals
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </section>
-    </main>
+    </main>    
 
     <footer class="footer">
         <div class="container">
