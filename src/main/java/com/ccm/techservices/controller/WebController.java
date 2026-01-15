@@ -30,5 +30,8 @@ public class WebController {
     public String contact() {
         return "contact";
     }
+
+    @GetMapping("/software-license-manager-project")
+    public String softwareLicenseManagerProject() {return "software-license-manager-project";}
  
 }
