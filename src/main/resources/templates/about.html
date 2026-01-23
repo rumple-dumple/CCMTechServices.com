@@ -20,7 +20,12 @@
             <ul class="nav-links">
                 <li><a th:href="@{/}">Home</a></li>
                 <li><a th:href="@{/services}">Services</a></li>
-                <li><a th:href="@{/projects}">Projects</a></li>
+                <li class="dropdown">
+                    <a th:href="@{/projects}">Projects</a>
+                    <div class="dropdown-content">
+                        <a th:href="@{/software-license-manager-project}">Software License Manager</a>
+                    </div>
+                </li>
                 <li><a th:href="@{/about}" class="active">About</a></li>
                 <li><a th:href="@{/contact}">Contact</a></li>
             </ul>
@@ -66,30 +71,35 @@
                     <div class="certs-section">
                         <h2 style="text-align: left; margin-bottom: 2rem;">Certifications</h2>
                         <div class="cert-list" style="display: flex; flex-direction: column; gap: 1.5rem;">
-                    <!-- Wrapping each certification in a link -->
-                        <a href="https://learn.microsoft.com/api/credentials/share/en-us/RonsonPhillips-9647/9D90FA954BD452D8?sharingId=BCB055CBAFBDAC9C" style="text-decoration: none; display: block; color: inherit;">
-                            <div class="cert-card" style="background: var(--card-bg); padding: 1.5rem; border-radius: 10px; border-left: 4px solid var(--accent-blue);">
-                                <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: #fff;">PL-900</h3>
-                                <p style="margin-bottom: 0;">Microsoft Power Platform Fundamentals</p>
-                            </div>
-                        </a>
-                        <a href="https://learn.microsoft.com/api/credentials/share/en-us/RonsonPhillips-9647/FC97956874E53219?sharingId=BCB055CBAFBDAC9C" style="text-decoration: none; display: block; color: inherit;">
-                            <div class="cert-card" 
-                                style="background: var(--card-bg); padding: 1.5rem; border-radius: 10px; border-left: 4px solid var(--accent-blue);">
-                                <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: #fff;">AZ-900</h3>
-                                <p style="margin-bottom: 0;">Microsoft Azure Fundamentals</p>
-                            </div>
-                        </a>
-                        <a href="https://learn.microsoft.com/api/credentials/share/en-us/RonsonPhillips-9647/9C6D4AB802897BAC?sharingId=BCB055CBAFBDAC9C" style="text-decoration: none; display: block; color: inherit;">
-                            <div class="cert-card"
-                                style="background: var(--card-bg); padding: 1.5rem; border-radius: 10px; border-left: 4px solid var(--accent-blue);">
-                                <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: #fff;">SC-900</h3>
-                                <p style="margin-bottom: 0;">Microsoft Security, Compliance and Identity Fundamentals
-                                </p>
-                            </div>
-                        </a>
+                            <!-- Wrapping each certification in a link -->
+                            <a href="https://learn.microsoft.com/api/credentials/share/en-us/RonsonPhillips-9647/9D90FA954BD452D8?sharingId=BCB055CBAFBDAC9C"
+                                style="text-decoration: none; display: block; color: inherit;">
+                                <div class="cert-card"
+                                    style="background: var(--card-bg); padding: 1.5rem; border-radius: 10px; border-left: 4px solid var(--accent-blue);">
+                                    <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: #fff;">PL-900</h3>
+                                    <p style="margin-bottom: 0;">Microsoft Power Platform Fundamentals</p>
+                                </div>
+                            </a>
+                            <a href="https://learn.microsoft.com/api/credentials/share/en-us/RonsonPhillips-9647/FC97956874E53219?sharingId=BCB055CBAFBDAC9C"
+                                style="text-decoration: none; display: block; color: inherit;">
+                                <div class="cert-card"
+                                    style="background: var(--card-bg); padding: 1.5rem; border-radius: 10px; border-left: 4px solid var(--accent-blue);">
+                                    <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: #fff;">AZ-900</h3>
+                                    <p style="margin-bottom: 0;">Microsoft Azure Fundamentals</p>
+                                </div>
+                            </a>
+                            <a href="https://learn.microsoft.com/api/credentials/share/en-us/RonsonPhillips-9647/9C6D4AB802897BAC?sharingId=BCB055CBAFBDAC9C"
+                                style="text-decoration: none; display: block; color: inherit;">
+                                <div class="cert-card"
+                                    style="background: var(--card-bg); padding: 1.5rem; border-radius: 10px; border-left: 4px solid var(--accent-blue);">
+                                    <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: #fff;">SC-900</h3>
+                                    <p style="margin-bottom: 0;">Microsoft Security, Compliance and Identity
+                                        Fundamentals
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                </div>
 
                 </div>
             </div>

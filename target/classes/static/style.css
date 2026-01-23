@@ -26,7 +26,9 @@ body {
 }
 
 /* Typography */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-weight: 700;
     line-height: 1.2;
 }
@@ -337,12 +339,74 @@ ul {
     }
 }
 
+/* Dropdown Navigation Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    position: absolute;
+    background-color: rgba(17, 17, 17, 0.98);
+    min-width: 250px;
+    box-shadow: 0px 8px 20px 0px rgba(0, 170, 255, 0.2);
+    z-index: 2000;
+    border: 1px solid rgba(0, 170, 255, 0.2);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    left: 0;
+    margin-top: 10px;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.4s ease;
+    padding: 0;
+}
+
+.dropdown:hover .dropdown-content {
+    max-height: 500px;
+    opacity: 1;
+    padding: 10px 0;
+}
+
+.dropdown-content a {
+    color: var(--text-primary);
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.95rem;
+    transition: var(--transition);
+    border-left: 3px solid transparent;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(0, 170, 255, 0.1);
+    color: var(--accent-blue);
+    padding-left: 25px;
+    border-left-color: var(--accent-blue);
+}
+
+/* Dropdown arrow indicator */
+.dropdown>a::after {
+    content: ' ▼';
+    font-size: 0.65em;
+    margin-left: 5px;
+    vertical-align: middle;
+    display: inline-block;
+    transition: var(--transition);
+}
+
+.dropdown:hover>a::after {
+    transform: rotate(180deg);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     h1 {
         font-size: 2.5rem;
     }
-    
+
     .nav-links {
         display: none;
         position: absolute;
@@ -361,6 +425,39 @@ ul {
 
     .hamburger {
         display: block;
+    }
+
+    /* Mobile Dropdown Styles */
+    .dropdown {
+        display: block;
+        width: 100%;
+    }
+
+    .dropdown>a::after {
+        float: right;
+    }
+
+    .dropdown-content {
+        position: static;
+        display: none;
+        background-color: rgba(255, 255, 255, 0.03);
+        box-shadow: none;
+        border: none;
+        opacity: 1;
+        transform: none;
+        padding-left: 20px;
+        min-width: 100%;
+        margin-top: 0;
+        border-radius: 0;
+    }
+
+    .dropdown.active .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content a {
+        padding: 10px 20px;
+        font-size: 0.9rem;
     }
 }
 

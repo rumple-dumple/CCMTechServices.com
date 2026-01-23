@@ -21,7 +21,12 @@
             <ul class="nav-links">
                 <li><a th:href="@{/}" class="active">Home</a></li>
                 <li><a th:href="@{/services}">Services</a></li>
-                <li><a th:href="@{/projects}">Projects</a></li>
+                <li class="dropdown">
+                    <a th:href="@{/projects}">Projects</a>
+                    <div class="dropdown-content">
+                        <a th:href="@{/software-license-manager-project}">Software License Manager</a>
+                    </div>
+                </li>
                 <li><a th:href="@{/about}">About</a></li>
                 <li><a th:href="@{/contact}">Contact</a></li>
             </ul>
@@ -59,13 +64,13 @@
             </div>
         </section>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 CCM Tech Services. All rights reserved.</p>
-        </div>
-    </footer>
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2025 CCM Tech Services. All rights reserved.</p>
+            </div>
+        </footer>
 
-    <script th:src="@{/script.js}"></script>
+        <script th:src="@{/script.js}"></script>
 </body>
 
 </html>

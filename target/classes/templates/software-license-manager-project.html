@@ -2,25 +2,93 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Software License Manager Project</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" th:href="@{/style.css}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software License Manager Project</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" th:href="@{/style.css}">
 </head>
 
 <body>
-<header class="header">
-    <div class="logo-container">
-      <a th:href="@{/}">
-         <img th:src="@{/assets/logo.jpg}" alt="CCM Tech Services Logo" class="nav-logo">
-      </a>
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo-container">
+        <a th:href="@{/}">
+          <img th:src="@{/assets/logo.jpg}" alt="CCM Tech Services Logo" class="nav-logo">
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li><a th:href="@{/}">Home</a></li>
+        <li><a th:href="@{/services}">Services</a></li>
+        <li class="dropdown">
+          <a th:href="@{/projects}">Projects</a>
+          <div class="dropdown-content">
+            <a th:href="@{/software-license-manager-project}" class="active">Software License Manager</a>
+          </div>
+        </li>
+        <li><a th:href="@{/about}">About</a></li>
+        <li><a th:href="@{/contact}">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" style="min-height: 400px; height: 50vh;">
+      <div class="hero-content">
+        <h1>Software License Manager</h1>
+        <p>A complete software license management application designed to elevate the chaos in license issuance.</p>
+      </div>
+      <div class="hero-background"></div>
+    </section>
+
+    <section style="padding: 80px 0; background: var(--bg-color);">
+      <div class="container">
+        <h2 class="section-title">Project Overview</h2>
+        <div style="max-width: 900px; margin: 0 auto;">
+          <p style="font-size: 1.1rem; margin-bottom: 2rem;">
+            The Software License Manager is a comprehensive solution for managing software licenses across your
+            organization.
+            Built with modern technologies and best practices, it provides a secure and efficient way to track,
+            distribute,
+            and manage software licenses.
+          </p>
+
+          <h3 style="color: var(--accent-blue); font-size: 1.5rem; margin: 2rem 0 1rem;">Key Features</h3>
+          <ul style="list-style: none; padding: 0;">
+            <li style="padding: 0.8rem 0; border-bottom: 1px solid rgba(255,255,255,0.05);">
+              🔐 <strong>Secure License Generation</strong> - Generate unique license keys with advanced encryption
+            </li>
+            <li style="padding: 0.8rem 0; border-bottom: 1px solid rgba(255,255,255,0.05);">
+              📊 <strong>Real-time Tracking</strong> - Monitor license usage and expiration dates
+            </li>
+            <li style="padding: 0.8rem 0; border-bottom: 1px solid rgba(255,255,255,0.05);">
+              👥 <strong>User Management</strong> - Assign and track licenses across users and departments
+            </li>
+            <li style="padding: 0.8rem 0; border-bottom: 1px solid rgba(255,255,255,0.05);">
+              📈 <strong>Analytics Dashboard</strong> - Comprehensive reporting and insights
+            </li>
+          </ul>
+
+          <div style="margin-top: 3rem; text-align: center;">
+            <a th:href="@{/contact}" class="cta-button">Request More Information</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 CCM Tech Services. All rights reserved.</p>
     </div>
-    <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-    </div>
-</header>
+  </footer>
+
+  <script th:src="@{/script.js}"></script>
 </body>
+
 </html>
