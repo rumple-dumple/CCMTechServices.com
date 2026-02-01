@@ -481,3 +481,46 @@ ul {
 .service-card:hover .project-image-placeholder {
     background: linear-gradient(135deg, rgba(0, 170, 255, 0.1), rgba(0, 229, 255, 0.1));
 }
+
+/* The 'Window' that clips the images */
+.gallery-container {
+    width: 100%;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    padding: 20px 0;
+}
+
+/* The long 'Film Strip' that moves */
+.gallery-wrapper {
+    display: flex;
+    width: calc(250px * 6);
+    /* Width of one image * total number of images */
+    animation: scroll 40s linear infinite;
+}
+
+.gallery-wrapper img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    margin: 0 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* The Animation: Moves the strip from 0 to the left */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        /* Move by the width of the original (non-duplicate) images */
+        transform: translateX(calc(-250px * 4));
+    }
+}
+
+/* Optional: Pause the roll when the user hovers over an image */
+.gallery-wrapper:hover {
+    animation-play-state: paused;
+}

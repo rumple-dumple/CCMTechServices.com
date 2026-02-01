@@ -49,35 +49,22 @@
     <section style="padding: 80px 0; background: var(--bg-color);">
       <div class="container">
         <h2 class="section-title">Project Overview</h2>
-        <div style="max-width: 900px; margin: 0 auto;">
-          <p style="font-size: 1.1rem; margin-bottom: 2rem;">
-            The Software License Manager is a comprehensive solution for managing software licenses across your
-            organization.
-            Built with modern technologies and best practices, it provides a secure and efficient way to track,
-            distribute,
-            and manage software licenses.
-          </p>
+        <div style="max-width: 1000px; margin: 0 auto; overflow: hidden;">
+          <div class="gallery-container">
+            <div class="gallery-wrapper">
+              <img th:src="@{/assets/screenshot1.png}" alt="Administrator Dashboard">
+              <img th:src="@{/assets/screenshot2.png}" alt="User Dashboard">
+              <img th:src="@{/assets/screenshot3.png}" alt="Reports">
 
-          <h3 style="color: var(--accent-blue); font-size: 1.5rem; margin: 2rem 0 1rem;">Key Features</h3>
-          <ul style="list-style: none; padding: 0;">
-            <li style="padding: 0.8rem 0; border-bottom: 1px solid rgba(255,255,255,0.05);">
-              🔐 <strong>Secure License Generation</strong> - Generate unique license keys with advanced encryption
-            </li>
-            <li style="padding: 0.8rem 0; border-bottom: 1px solid rgba(255,255,255,0.05);">
-              📊 <strong>Real-time Tracking</strong> - Monitor license usage and expiration dates
-            </li>
-            <li style="padding: 0.8rem 0; border-bottom: 1px solid rgba(255,255,255,0.05);">
-              👥 <strong>User Management</strong> - Assign and track licenses across users and departments
-            </li>
-            <li style="padding: 0.8rem 0; border-bottom: 1px solid rgba(255,255,255,0.05);">
-              📈 <strong>Analytics Dashboard</strong> - Comprehensive reporting and insights
-            </li>
-          </ul>
-
-          <div style="margin-top: 3rem; text-align: center;">
-            <a th:href="@{/contact}" class="cta-button">Request More Information</a>
+              <img th:src="@{/assets/screenshot1.png}" alt="Administrator Dashboard">
+              <img th:src="@{/assets/screenshot2.png}" alt="User Dashboard">
+            </div>
           </div>
         </div>
+        <div style="margin-top: 3rem; text-align: center;">
+          <a th:href="@{/contact}" class="cta-button">Request More Information</a>
+        </div>
+      </div>
       </div>
     </section>
   </main>
