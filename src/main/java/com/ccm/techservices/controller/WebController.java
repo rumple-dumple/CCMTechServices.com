@@ -32,6 +32,13 @@ public class WebController {
     }
 
     @GetMapping("/software-license-manager-project")
-    public String softwareLicenseManagerProject() {return "software-license-manager-project";}
- 
+    public String softwareLicenseManagerProject() {
+        return "software-license-manager-project";
+    }
+
+    @GetMapping("/inspectpro-project")
+    public String inspectProProject() {
+        return "inspectpro-project";
+    }
+
 }
