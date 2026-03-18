@@ -21,6 +21,16 @@ public class WebController {
         return "projects";
     }
 
+    @GetMapping("/projects/software-license-manager-project")
+    public String softwareLicenseManagerProject() {
+        return "/projects/software-license-manager-project";
+    }
+
+    @GetMapping("/projects/inspectpro-project")
+    public String inspectProProject() {
+        return "/projects/inspectpro-project";
+    }
+
     @GetMapping("/services")
     public String services() {
         return "services";
@@ -30,15 +40,4 @@ public class WebController {
     public String contact() {
         return "contact";
     }
-
-    @GetMapping("/software-license-manager-project")
-    public String softwareLicenseManagerProject() {
-        return "software-license-manager-project";
-    }
-
-    @GetMapping("/inspectpro-project")
-    public String inspectProProject() {
-        return "inspectpro-project";
-    }
-
 }

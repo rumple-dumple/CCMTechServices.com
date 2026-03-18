@@ -5,11 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CCM Tech Services</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" th:href="@{/style.css}">
 </head>
 
@@ -27,8 +22,8 @@
                 <li class="dropdown">
                     <a th:href="@{/projects}">Projects</a>
                     <div class="dropdown-content">
-                        <a th:href="@{/software-license-manager-project}">Software License Manager</a>
-                        <a th:href="@{/inspectpro-project}">InspectPro</a>
+                        <a th:href="@{/projects/software-license-manager-project}">Software License Manager</a>
+                        <a th:href="@{/projects/inspectpro-project}">InspectPro</a>
                     </div>
                 </li>
                 <li><a th:href="@{/about}">About</a></li>
@@ -59,10 +54,12 @@
             <div class="container">
                 <h2 class="section-title">Why Choose CCM?</h2>
                 <div class="about-content">
-                    <p>At CCM Tech Services, we bridge the gap between complex technology and business success. With a
+                    <p>At CCM Tech Services, we bridge the gap between complex technology and business success. With
+                        a
                         focus on reliability, innovation, and security, we provide the technical foundation your
                         business needs to thrive in the digital age.</p>
-                    <a th:href="@{/about}" class="cta-button" style="margin-top: 2rem; display: inline-block;">Read Our
+                    <a th:href="@{/about}" class="cta-button" style="margin-top: 2rem; display: inline-block;">Read
+                        Our
                         Story</a>
                 </div>
             </div>
@@ -76,5 +73,6 @@
 
         <script th:src="@{/script.js}"></script>
 </body>
+</div>
 
 </html>
