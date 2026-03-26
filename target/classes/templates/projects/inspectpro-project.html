@@ -42,11 +42,37 @@
     </header>
 
     <main>
-        <h1>InspectPro</h1>
-        <p>InspectPro is a comprehensive construction inspection management application designed to streamline the
-            inspection process for construction professionals. It provides a centralized platform for managing
-            inspection workflows, tracking progress, and ensuring compliance with industry standards.</p>
+        <section class="hero" style="min-height: 400px; height: 50vh;">
+            <div class="hero-content">
+                <h1>InspectPro</h1>
+                <p>A comprehensive construction inspection management application.</p>
+            </div>
+            <div class="hero-background"></div>
+        </section>
+
+        <section style="padding: 80px 0;">
+            <div class="container">
+                <h2 class="section-title">Project Overview</h2>
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <div class="about-content">
+                        <p style="font-size: 1.1rem;">InspectPro is a comprehensive construction inspection management
+                            application designed to streamline the inspection process for construction professionals.
+                            It provides a centralized platform for managing inspection workflows, tracking progress,
+                            and ensuring compliance with industry standards.</p>
+                        <a th:href="@{/contact}" class="cta-button" style="margin-top: 1rem; display: inline-block;">Request More Information</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 CCM Tech Services. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script th:src="@{/script.js}"></script>
 </body>
 
 </html>
